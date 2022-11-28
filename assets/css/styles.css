@@ -400,8 +400,9 @@ img {
 }
 /*==================== ABOUT ====================*/
 .about__img{
-  width: 200px;
+  width: 100px;
   border-radius: .5rem;
+  margin-top: -70px;
   justify-self: center;
   align-self: center;
 }
