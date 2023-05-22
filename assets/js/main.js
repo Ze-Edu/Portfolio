@@ -18,8 +18,24 @@ if(navClose){
         navMenu.classList.remove('show-menu')
     })
 }
+/*==================== ABOUT ====================*/
+function leiaMais(){
+    var pontos=document.getElementById("pontos");
+    var maisTexto=document.getElementById("mais");
+    var btnLerMais=document.getElementById("btnLerMais");
 
+    if(pontos.style.display === "none"){
+        pontos.style.display="inline";
+        maisTexto.style.display="none";
+        btnLerMais.innerHTML="Leia Mais!"
+    }else{
+        pontos.style.display="none";
+        maisTexto.style.display="inline";
+        btnLerMais.innerHTML="Leia Menos"
+    }
+}
 /*==================== REMOVE MENU MOBILE ====================*/
+
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
